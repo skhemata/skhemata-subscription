@@ -1,0 +1,9 @@
+{
+  "subscription": {
+    "accountInfo": "Account Information",
+    "paymentInfo": "Payment Information",
+    "otherInfo": "Other Information",
+    "reviewPayment": "Review Payment",
+    "billingStart": "Your next billing will start on"
+  }
+}

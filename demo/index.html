@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+  </style>
+  <!-- Stripe.js -->
+  <!-- <script type="text/javascript" src="https://js.stripe.com/v2/"></script> -->
+  <script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../dist/skhemata-subscription.js';
+
+    const title = 'Thrinacia Atlas Pricing!';
+
+    const thankYouTitle = 'Thank you for the subscription.';
+    const thankYouMessage = 'We will be in touch to get you started!';
+
+    const api = {
+        url: 'https://origin.thrinacia.com/api/service/restv1',
+    }
+    
+    const data = [
+          {
+            name: "Micro Plan",
+            raw_name: "micro",
+            key: "thrinacia-plan-micro",
+            id: 9,
+            price: 9.99,
+            color: "#fbae5c",
+            icon: "faCloud",
+            class_name: 'yellow',
+            description: "Test description",
+            features: ["feature 1 <a target=\"blank\" href=\"https://thrinacia.com\">click here</a>", "feature 2", "feature 3", "feature 4", "feature 5"],
+            interval: "monthly",
+          },
+          // {
+          // name: "Discover Plan - Trial",
+          //   raw_name: "discover",
+          //   key: "discover-plan-trial-14-day",
+          //   id: 6,
+          //   price: 39.99,
+          //   class_name: 'green',
+          //   description: "Test description",
+          //   features: ["feature 1", "feature 2", "feature 3", "feature 4", "feature 5"],
+          //   interval: "monthly",
+          // },
+          {
+            name: "Discover Plan",
+            raw_name: "regular",
+            key: "discover-plan-regular",
+            id: 7,
+            price: 39.99,
+            color: "#2c9be2",
+            icon: "faSearch",
+            class_name: 'orange',
+            description: "Test description",
+            features: ["feature 1", "feature 2", "feature 3", "feature 4", "feature 5", "feature 6", "feature 7", "feature 8"],
+            interval: "monthly",
+            default: true,
+            trial: {
+              price: 0,
+              periodType: 'day',
+              periodLength: 14
+            }
+          },
+          {
+            name: "Scale Plan",
+            raw_name: "scale",
+            key: "thrinacia-plan-scale",
+            id: 3,
+            price: 269.99,
+            color: "#00b5ac",
+            icon: "faLightbulb",
+            class_name: 'red',
+            description: "Test description",
+            features: ["feature 1", "feature 2", "feature 3", "feature 4", "feature 5", "feature 6", "feature 7", "feature 8", "feature 9", "feature 10", "feature 11"],
+            interval: "monthly",
+          }
+        ];
+
+      const stripePublicKeys =  {
+        CA: 'pk_test_zSY68rEPOZJ669tvgiDa406w',
+        US: 'pk_test_fj0ml5oHvtPT4GUl2eZKQjMK'
+      }
+
+    render(
+      html`
+        <skhemata-subscription 
+          .title=${title}
+          .thankYouTitle=${thankYouTitle}
+          .thankYouMessage=${thankYouMessage}
+          config-data=${JSON.stringify(data)}
+          api="${JSON.stringify(api)}"
+          stripe-public-keys=${JSON.stringify(stripePublicKeys)}
+        >
+        </skhemata-subscription>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>

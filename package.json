@@ -1,0 +1,96 @@
+{
+  "name": "@skhemata/skhemata-subscription",
+  "version": "1.1.1",
+  "description": "Skhemata Subscription Plan Web Component. This web component provides configurable website plans for a product.",
+  "author": "skhemata-subscription",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "license": "https://raw.githubusercontent.com/skhemata/skhemata-subscription/master/LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skhemata/skhemata-subscription.git"
+  },
+  "keywords": [
+    "skhemata",
+    "skhemata-subscription",
+    "web component"
+  ],
+  "scripts": {
+    "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
+    "build": "tsc",
+    "prepublish": "tsc",
+    "lint": "eslint --ext .ts,.html . --ignore-path .gitignore && prettier \"**/*.ts\" --check --ignore-path .gitignore",
+    "format": "eslint --ext .ts,.html . --fix --ignore-path .gitignore && prettier \"**/*.ts\" --write --ignore-path .gitignore",
+    "test": "tsc && wtr --coverage",
+    "test:watch": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wtr --watch\"",
+    "storybook": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds -c .storybook/server.mjs\"",
+    "storybook:build": "tsc && build-storybook"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@open-wc/scoped-elements": "^2.0.0-next.3",
+    "@power-elements/json-viewer": "^2.1.1",
+    "@power-elements/stripe-elements": "^2.3.8",
+    "@riovir/wc-fontawesome": "^0.1.6",
+    "@skhemata/skhemata-api-client-js": "^1.1.0",
+    "@skhemata/skhemata-base": "^1.1.0",
+    "@skhemata/skhemata-css": "^1.1.0",
+    "@skhemata/skhemata-form": "^1.1.1",
+    "@stripe/stripe-js": "^1.14.0",
+    "lit": "^2.0.0-rc.2",
+    "lit-html": "^2.0.0-rc.3",
+    "lit-translate": "^1.2.1"
+  },
+  "devDependencies": {
+    "@open-wc/eslint-config": "^4.3.0",
+    "@open-wc/testing": "^2.5.33",
+    "@types/mocha": "^8.2.2",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "@web/dev-server": "^0.1.17",
+    "@web/dev-server-storybook": "^0.3.6-next.0",
+    "@web/test-runner": "^0.12.20",
+    "concurrently": "^5.3.0",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^7.2.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "@open-wc/eslint-config",
+      "eslint-config-prettier"
+    ],
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error"
+      ],
+      "import/no-unresolved": "off",
+      "import/extensions": "off"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "arrowParens": "avoid"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}
