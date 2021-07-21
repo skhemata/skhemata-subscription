@@ -102,6 +102,9 @@ export class SkhemataSubscription extends SkhemataBase {
         a.text-link:hover {
           opacity: 75%;
         }
+        div.plans-grid.container {
+          max-width: 900px;
+        }
       `,
     ];
   }
@@ -671,7 +674,7 @@ export class SkhemataSubscription extends SkhemataBase {
                 <div class="panel left-column">
                   <div class="panel-block">
                     ${accountInfo} ${paymentInfo}
-                    <hr/>
+                    <hr />
                     ${otherInfo}
                   </div>
                 </div>

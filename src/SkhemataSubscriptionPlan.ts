@@ -21,6 +21,12 @@ export class SkhemataSubscriptionPlan extends SkhemataBase {
           border-bottom: 1px solid #e3e3e3;
           padding: 0.3rem 0;
         }
+        .feature-list li:hover {
+          background: #f9f9f9;
+        }
+        .feature-list li:first-child {
+          border-top: 1px solid #e3e3e3;
+        }
         .feature-list li:last-child {
           border-bottom: none;
         }
@@ -233,7 +239,7 @@ export class SkhemataSubscriptionPlan extends SkhemataBase {
                     ${plan.features.map(
                       (feature: any) =>
                         html`
-                          <li class="mb-3 is-flex is-align-items-center ">
+                          <li class="is-flex is-align-items-center ">
                             <p class="feature-item py-1">
                               ${unsafeHTML(feature)}
                             </p>
