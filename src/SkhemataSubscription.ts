@@ -664,8 +664,8 @@ export class SkhemataSubscription extends SkhemataBase {
         @submit=${this.handleSubmit}
         @change=${this.handleChange}
       >
-        <div class="columns is-desktop">
-          <div class="column is-10 is-offset-1">
+        <div class="container">
+          <div class="column">
             <div class="columns is-desktop">
               <div class="column is-two-thirds-desktop">
                 <div class="panel left-column">
