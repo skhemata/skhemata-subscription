@@ -670,9 +670,7 @@ export class SkhemataSubscription extends SkhemataBase {
               <div class="column is-two-thirds-desktop">
                 <div class="panel left-column">
                   <div class="panel-block">
-                    ${accountInfo} ${paymentInfo}
-                    <hr />
-                    ${otherInfo}
+                    ${accountInfo} ${paymentInfo} ${otherInfo}
                   </div>
                 </div>
               </div>
