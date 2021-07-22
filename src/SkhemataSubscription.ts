@@ -102,9 +102,6 @@ export class SkhemataSubscription extends SkhemataBase {
         a.text-link:hover {
           opacity: 75%;
         }
-        div.plans-grid.container {
-          max-width: 900px;
-        }
       `,
     ];
   }
