@@ -29,6 +29,7 @@ export class SkhemataSubscription extends SkhemataBase {
           display: block;
           padding: 25px;
           color: var(--skhemata-subscription-text-color, #000);
+          --stripe-elements-width: 0px;
         }
         .panel .panel-block {
           flex-direction: column;

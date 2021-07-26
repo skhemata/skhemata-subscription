@@ -37,6 +37,7 @@ export class SkhemataSubscriptionPlan extends SkhemataBase {
           transition: all 0.6s ease-in-out;
           background: white;
           cursor: pointer;
+          margin-bottom: 3rem;
         }
         .plan-name,
         .plan-price {
@@ -75,6 +76,7 @@ export class SkhemataSubscriptionPlan extends SkhemataBase {
         @media screen and (min-width: 769px) {
           .plan {
             padding-bottom: 6rem;
+            margin-bottom: 0rem;
           }
           .bottom-button .button {
             position: absolute;
@@ -188,7 +190,7 @@ export class SkhemataSubscriptionPlan extends SkhemataBase {
   render() {
     return html`
       <div class="tile is-ancestor">
-        <div class="tile is-horizontal box">
+        <div class="tile is-horizontal">
           ${this.plans?.map(
             (plan, index) => html`
               <div
