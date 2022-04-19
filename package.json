@@ -1,6 +1,6 @@
 {
   "name": "@skhemata/skhemata-subscription",
-  "version": "1.1.5",
+  "version": "1.2.0",
   "description": "Skhemata Subscription Plan Web Component. This web component provides configurable website plans for a product.",
   "author": "skhemata-subscription",
   "main": "dist/index.js",
