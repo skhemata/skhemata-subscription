@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Micro Plan",
+    "raw_name": "micro",
+    "key": "thrinacia-plan-micro",
+    "id": 9,
+    "price": 9.99,
+    "color": "#fbae5c",
+    "icon": "faCloud",
+    "class_name": "yellow",
+    "description": "Test description",
+    "features": [
+      "feature 1 <a target=\"blank\" href=\"https://thrinacia.com\">click here</a>",
+      "feature 2",
+      "feature 3",
+      "feature 4",
+      "feature 5"
+    ],
+    "interval": "monthly"
+  },
+  {
+    "name": "Discover Plan",
+    "raw_name": "regular",
+    "key": "discover-plan-regular",
+    "id": 7,
+    "price": 39.99,
+    "color": "#2c9be2",
+    "icon": "faSearch",
+    "class_name": "orange",
+    "description": "Test description",
+    "features": [
+      "feature 1",
+      "feature 2",
+      "feature 3",
+      "feature 4",
+      "feature 5",
+      "feature 6",
+      "feature 7",
+      "feature 8"
+    ],
+    "interval": "monthly",
+    "default": true,
+    "trial": {
+      "price": 0,
+      "periodType": "day",
+      "periodLength": 14
+    }
+  },
+  {
+    "name": "Scale Plan",
+    "raw_name": "scale",
+    "key": "thrinacia-plan-scale",
+    "id": 3,
+    "price": 269.99,
+    "color": "#00b5ac",
+    "icon": "faLightbulb",
+    "class_name": "red",
+    "description": "Test description",
+    "features": [
+      "feature 1",
+      "feature 2",
+      "feature 3",
+      "feature 4",
+      "feature 5",
+      "feature 6",
+      "feature 7",
+      "feature 8",
+      "feature 9",
+      "feature 10",
+      "feature 11"
+    ],
+    "interval": "monthly"
+  }
+]
