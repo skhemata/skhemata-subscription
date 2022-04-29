@@ -32,7 +32,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@open-wc/scoped-elements": "^2.0.0-next.3",
     "@power-elements/json-viewer": "^2.1.1",
-    "@power-elements/stripe-elements": "^2.3.8",
+    "@power-elements/stripe-elements": "^2.3.12",
     "@riovir/wc-fontawesome": "^0.1.6",
     "@skhemata/skhemata-api-client-js": "^1.1.0",
     "@skhemata/skhemata-base": "^1.1.0",
