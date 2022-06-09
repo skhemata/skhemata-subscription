@@ -148,6 +148,20 @@ export default {
       },
     },
   },
+  parameters: {
+    widgetCode: `
+    <skhemata-subscription 
+    .title="Thrinacia Atlas Pricing!"
+    .thankYouTitle="Thank you for the subscription."
+    .thankYouMessage="We will be in touch to get you started!"
+    config-src="https://cdn.jsdelivr.net/gh/alexey432/test-subscription/data.json"         
+    api='{"url":"https://origin.thrinacia.com/api/service/restv1"}'
+    stripe-public-keys='{"CA": "pk_test_zSY68rEPOZJ669tvgiDa406w", "US": "pk_test_fj0ml5oHvtPT4GUl2eZKQjMK"}'
+    ></skhemata-subscription>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@skhemata/skhemata-subscription@latest/build/index.js"></script> 
+    `,
+  },
 };
 
 interface Story<T> {
