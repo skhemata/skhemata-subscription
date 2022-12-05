@@ -34,7 +34,7 @@
     "@power-elements/json-viewer": "^2.1.1",
     "@power-elements/stripe-elements": "^2.3.12",
     "@riovir/wc-fontawesome": "^0.1.6",
-    "@skhemata/skhemata-api-client-js": "^1.1.0",
+    "@skhemata/skhemata-api-client-js": "^1.4.0",
     "@skhemata/skhemata-base": "^1.1.0",
     "@skhemata/skhemata-css": "^1.1.0",
     "@skhemata/skhemata-form": "^1.1.1",
@@ -44,6 +44,9 @@
     "lit-translate": "^1.2.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-proposal-decorators": "^7.2.3",
     "@open-wc/eslint-config": "^4.3.0",
     "@open-wc/testing": "^2.5.33",
     "@types/mocha": "^8.2.2",
@@ -52,21 +55,18 @@
     "@web/dev-server": "^0.1.17",
     "@web/dev-server-storybook": "^0.3.6-next.0",
     "@web/test-runner": "^0.12.20",
+    "@webcomponents/webcomponentsjs": "^2.2.4",
     "concurrently": "^5.3.0",
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^7.2.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
-    "tslib": "^2.2.0",
-    "typescript": "^4.2.4",
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-proposal-class-properties": "^7.2.3",
-    "@babel/plugin-proposal-decorators": "^7.2.3",
     "rollup": "^1.1.0",
     "rollup-plugin-babel": "^4.3.0",
     "rollup-plugin-node-resolve": "^4.0.0",
-    "@webcomponents/webcomponentsjs": "^2.2.4"
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
