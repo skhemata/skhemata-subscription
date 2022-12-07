@@ -70,6 +70,9 @@ export class SkhemataSubscription extends SkhemataBase {
         .dropdown-trigger button {
           color: #d0d0d0;
         }
+        #plans option {
+          padding-right: 1rem;
+        }
         .modal-button {
           margin: auto;
           width: 30%;
