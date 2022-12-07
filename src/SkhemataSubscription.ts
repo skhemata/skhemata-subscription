@@ -614,7 +614,7 @@ export class SkhemataSubscription extends SkhemataBase {
               <a href="/privacy" target="_blank" class="text-link">Privacy</a>,
               <a class="text-link" href="/cookies">Cookies</a> and
               <a
-                href="/faq/post/what-is-thrinacia-atlas-refund-policy"
+                href="/refund-policy"
                 target="_blank"
                 class="text-link"
                 >Refund Policy</a
