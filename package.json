@@ -50,6 +50,7 @@
     "@open-wc/eslint-config": "^4.3.0",
     "@open-wc/testing": "^2.5.33",
     "@types/mocha": "^8.2.2",
+    "@types/quill": "^2.0.14",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "@web/dev-server": "^0.1.17",
